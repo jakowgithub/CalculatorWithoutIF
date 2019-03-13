@@ -75,7 +75,6 @@ public class Gate {
            Action action = new Action(a, b, signs.get(index));
             System.out.println("Result=" + action.getResult());
         } catch (IndexOutOfBoundsException iobe) {
-            //System.out.println("Second argument is't the arithmetic sign: + - m /, result wrong ");
             System.out.println(consolText.get(error));
         }
         catch (ArithmeticException ae) { System.out.println("can`t divide by ZERO ");
@@ -85,7 +84,6 @@ public class Gate {
         try {
             System.out.println("Result with different method=" + actionDifferent.action(a, b, signs.get(index)));
         } catch (IndexOutOfBoundsException iobe) {
-            //System.out.println("Second argument is't the arithmetic sign: + - m /, result wrong ");
             System.out.println(consolText.get(error));
         }
           catch (ArithmeticException ae) {
